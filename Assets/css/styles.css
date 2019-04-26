@@ -143,10 +143,13 @@ header .highlight, header .current a {
     padding: 10px;
 }
 
+.containerportfolio {
+    padding: 200px;
+}
 #boxes {
     background-image: url("../Images/irerock.JPG");
     background-attachment: fixed;
-    min-height: 800px;
+    min-height: 1000px;
 }
 
 #boxes .box {
@@ -154,6 +157,7 @@ header .highlight, header .current a {
     text-align: center;
     width: 30%;
     padding: 10px;
+    margin-bottom: 100px;
 }
 
 #boxes .box img {
