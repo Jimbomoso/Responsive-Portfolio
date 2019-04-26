@@ -81,9 +81,9 @@ header .highlight, header .current a {
 }
 
 #showcase {
-    min-height: 300px;
-    padding-top: 500px;
-    background: url("../Images/ireboat.jpg") no-repeat center;
+    min-height: 500px;
+    padding-top: 400px;
+    background: url("../Images/ireboat.JPG");
     background-size: cover;
     color: #fff;
     background-color: #616668;
