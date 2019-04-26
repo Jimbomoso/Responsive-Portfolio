@@ -85,6 +85,7 @@ header .highlight, header .current a {
     padding-top: 400px;
     background: url("../Images/ireboat.JPG");
     background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     background-color: #616668;
     text-align: center;
