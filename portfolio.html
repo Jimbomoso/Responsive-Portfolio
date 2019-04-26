@@ -1,47 +1,74 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/style.css.css">
-    </head>
 
-    <body>
-        <header>
-            <h1 id="logo"> James Morrison </h1>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Portfolio | Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <span class="highlight"> James Morrison </span> </h1>
+            </div>
             <nav>
-                <ul id="mainMenu">
-                    <li> <a href="index.html"> About </a> </li>
-                    <li> <a href="portfolio.html"> Portfolio </a> </li>
-                    <li> <a href="contact.html"> Contact </a> </li>
+                <ul>
+                    <li><a href="index.html"> Home </a> </li>
+                    <li class="current"><a href="portfolio.html"> Portfolio </a> </li>
+                    <li><a href="contact.html"> Contact </a> </li>
+
                 </ul>
             </nav>
-        </header>
-
-        <br> <br>
-
-        <section> 
-            <div class="content">
-                <h1 class="bio">Portfolio</h1>
-                <hr>
-                <br>
-                <gallery class="portfolio"> 
-                    <img src= "assets/gal1.jpg" alt= "pic1">
-                    <img src= "assets/gal2.jpg" alt= "pic2">
-                    <img src= "assets/gal3.jpg" alt= "pic3">
-                    <img src= "assets/gal4.jpg" alt= "pic4">
-                    <img src= "assets/gal5.jpg" alt= "pic5">
-                    <img src= "assets/gal6.jpg" alt= "pic6">
-                </gallery>
-            </div>
-        </section>
-        
-        <div class="footer">
-            <p>Copyright&#169;</p>
         </div>
+    </header>
 
-    </body>
+    <section id="showcase">
+        <div class="container">
+            <h1>Full-stack developer</h1>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, commodi?<p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1> Subscribe to my newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter email">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="assets/gal1.jpg" alt="pic1">
+            </div>
+            <div class="box">
+                <img src="assets/gal2.jpg" alt="pic2">
+            </div>
+            <div class="box">
+                <img src="assets/gal3.jpg" alt="pic3">
+            </div>
+            <div class="box">
+                <img src="assets/gal4.jpg" alt="pic4">
+            </div>
+            <div class="box">
+                <img src="assets/gal5.jpg" alt="pic5">
+            </div>
+            <div class="box">
+                <img src="assets/gal6.jpg" alt="pic6">
+            </div>
+        </div>
+    </section>
+
+    <footer> James Morrison &copy; 2019 </footer>
+
+</body>
 
 </html>

@@ -1,187 +1,173 @@
 body {
-    background: #f2f2f2;
-    background-image: url("http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_blue_1920x1234.jpg");
-    background-repeat: no-repeat;
-}
-
-.content {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    border-color: #dddddd;
-    border-radius: 4px;
-    background-color: white;
-}
-header {
-    background: white;
-    border-radius: 4px;
-}
-
-hr {
-    width: 95%;
-}
-
-input {
-    width: 100%;
-    
-}
-input[type=text], select {
-    width: 90%;
-    padding: 10px 20px;
-    margin: 0 auto;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-textarea {
-    width: 90%;
+    font: 16px/1.5; 
+    font-family: 'Love Ya Like A Sister', cursive;
     padding: 0;
-    margin: 10px;
-    height: 100px;
+    margin: 0;
+    background-color: #616668;
 }
 
-input[type=submit] {
-    width: 27%;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 14px 20px;
-    margin: 0 auto;
-    border: none;
-    border-radius:8px;
-    cursor: pointer;
-  }
-
-h1#logo {
-    font-size: 24px;
-    float: left;
-    background: #4aaaa5;
-    color: white;
-    padding: 32px;
-    margin: 0 auto;
-    margin-left: 19.75%;
-    margin-bottom: 0;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    border-radius: 8px;
-}
-
-ul#mainMenu {
-    float: left;
-}
-
-              
-nav:after {
-    content: "";
-    display: block;
-    clear: both;
+/* global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 ul {
-    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-li {
-    display: inline;
+.button_1 {
+    height: 38px;
+    background: #3EC9A7;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
 }
 
-li a {
-    display: block;
-    float: left;;
-    border-right: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
+header {
+    background: #2B879E;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    min-height: 70px;
+    border-bottom: #3EC9A7 3px solid;
+    font-family: 'Donegal One', serif;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    font-size: 55px;
+}
+
+header a {
+    color: #fff;
     text-decoration: none;
-    color: gray;
-    margin-left: 25px;
-    position: relative;
-    left: 80%;
+    text-transform: uppercase;
+    font-size: 17px;
 }
 
-a:hover {
-    color: red;
+header a:hover {
+    color: orange;
+    font-weight: bold;
 }
 
-.bio {
-    margin-left: 10px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
 }
 
-h1.bio {
-    color: #4aaaa5;
-    margin: 1%;
-    padding: 1%;
-}
-
-h1.bio:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-img.bio {
-    border-radius: 8px; 
-    background-color: white;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+header #branding {
     float: left;
-    display: block; 
-    padding-top: 2%;
-    padding-bottom: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin: 5%;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #3EC9A7;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 300px;
+    padding-top: 500px;
+    background: url("ireboat.JPG") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    background-color: #616668;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 55px;
+}
+
+#showcase p {
+    font-size: 20px;
+    font-family: 'Donegal One', serif;
+}
+
+.newsletter {
+    padding: 5px;
+    color: #fff;
+    background: #2B879E;
+    border-top: #3EC9A7 3px solid;
+}
+
+.newsletter h1 {
+    float: left;
+    font-size: 16px;
+    font-family: 'Donegal One', serif;
+    padding: 10px;
+}
+
+.newsletter form {
+    float: right;
+    padding: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.contactForm {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 150px;
     
 }
+
+.contactForm input {
+    padding: 4px;
+    height: 25px;
+    width: 550px;
+    text-align: center;
 }
-p.bio {
+
+.selfie {
+    width: 300px;
+    padding: 10px;
+}
+
+#boxes {
+    background-image: url("irerock.JPG");
+    background-attachment: fixed;
+    min-height: 800px;
+}
+
+#boxes .box {
     float: left;
-    line-height: 1.5em;
-    padding: 5%;
-    margin: 5%;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
 }
 
-.portfolio img {
-    border-radius: 8px;
-    margin: 0 auto;
+#boxes .box img {
+    width: 350px;
 }
 
-.footer {
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #616668;
+    text-align: center;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    background-color:gray;
-    color: white;
-    text-align: center;
-  }
-
-@media only screen and (max-width: 980px) {
-    body {
-        width: 100%;
+    border-top: #3EC9A7 3px solid;
 }
-    header {
-        width: 100%;
-    }
-
-@media only screen and (max-width: 768px) {
-    .onntent {
-        width: 50%;
-    }
-    header {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .content {
-        width: 25%;
-    }
-
-    header {
-        width: 25%;
-    }
-
-
-
-
-     
