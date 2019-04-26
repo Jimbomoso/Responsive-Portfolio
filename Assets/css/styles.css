@@ -81,7 +81,7 @@ header .highlight, header .current a {
 }
 
 #showcase {
-    min-height: 500px;
+    min-height: 410px;
     padding-top: 400px;
     background: url("../Images/ireboat.JPG");
     background-size: cover;
@@ -93,11 +93,13 @@ header .highlight, header .current a {
 
 #showcase h1 {
     font-size: 55px;
+    line-height: 1.5;
 }
 
 #showcase p {
     font-size: 20px;
     font-family: 'Donegal One', serif;
+    line-height: 1.5;
 }
 
 .newsletter {
@@ -126,43 +128,57 @@ header .highlight, header .current a {
 }
 
 .contactForm {
-    margin-top: 100px;
     text-align: center;
-    margin-bottom: 150px;
-    
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg");
+    min-height: 820px;
 }
 
 .contactForm input {
+    margin-top: 10px;
+    color: red;
     padding: 4px;
     height: 25px;
-    width: 550px;
+    width: 250px;
     text-align: center;
+    border: 5px solid red;
+}
+
+.contactForm h1 {
+    padding: 10px;
+    margin-top: 40px;
+    color: red;
 }
 
 .selfie {
+    margin-top: 20px;
     width: 300px;
-    padding: 10px;
+    
+    
 }
 
-.containerportfolio {
-    padding: 200px;
+#portfolio {
+    padding-top: 200px;
+    height: 100px;
 }
 #boxes {
-    background-image: url("../Images/irerock.JPG");
+    background-image: url("../Images/prism.png");
     background-attachment: fixed;
-    min-height: 1000px;
-}
-
-#boxes .box {
-    float: left;
+    min-height: 900px;
+    width: 100%;
     text-align: center;
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 100px;
 }
 
-#boxes .box img {
-    width: 350px;
+.box {
+    display: inline;
+}
+
+#boxes h1 {
+    margin-bottom: 25px;
+}
+
+img {
+
+   border: 1px white solid;
 }
 
 footer {
