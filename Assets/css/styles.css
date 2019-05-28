@@ -3,7 +3,7 @@ body {
     font-family: 'Love Ya Like A Sister', cursive;
     padding: 0;
     margin: 0;
-    background-color: #616668;
+    background-image: url("../Images/prism.png")
 }
 
 /* global */
@@ -19,12 +19,14 @@ ul {
 }
 
 .button_1 {
-    height: 38px;
+    height: 40px;
     background: #3EC9A7;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
+    color: red;
+    font-size: 1.5em;
+    border: 5px solid white;
 }
 
 header {
@@ -75,18 +77,8 @@ header nav {
     margin-top: 10px;
 }
 
-.social {
-    float: right;
-    margin-right: 11%;
-}
-
-header .highlight, header .current a {
-    color: #3EC9A7;
-    font-weight: bold;
-}
-
 #showcase {
-    min-height: 410px;
+    min-height: 500px;
     padding-top: 400px;
     background: url("../Images/ireboat.JPG");
     background-size: cover;
@@ -106,6 +98,8 @@ header .highlight, header .current a {
     font-family: 'Donegal One', serif;
     line-height: 1.5;
 }
+
+/* commenting this newsletter out for now, but keeping for future
 
 .newsletter {
     padding: 5px;
@@ -130,12 +124,13 @@ header .highlight, header .current a {
     padding: 4px;
     height: 25px;
     width: 250px;
-}
+} */
 
 .contactForm {
     text-align: center;
     background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg");
     min-height: 820px;
+    margin-bottom: 50px;
 }
 
 .contactForm input {
@@ -154,46 +149,169 @@ header .highlight, header .current a {
     color: red;
 }
 
+.contactForm p {
+    color: white;
+    line-height: 1.5;
+}
+
 .selfie {
     margin-top: 20px;
     width: 300px;
-    
-    
+    border: 15px white solid;
 }
 
 #portfolio {
     padding-top: 200px;
     height: 100px;
 }
-#boxes {
-    background-image: url("../Images/prism.png");
-    background-attachment: fixed;
-    min-height: 900px;
-    width: 100%;
+
+.boxes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 25px;
+    grid-row-gap: 300px;
+    margin-bottom: 300px;
+}
+
+
+.boxes img {
+    max-width: 100%;
+    border: solid 15px #3EC9A7;
+}
+
+.boxes p {
+    padding: 1%;
+    color: white;
+}
+
+.boxes h1 {
+    color: goldenrod;
+}
+
+.boxes a {
+    color: #3EC9A7;
+}
+
+.box1 {
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 1;
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 2;
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
     text-align: center;
 }
 
-.box {
-    display: inline;
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
 }
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    text-align: center;
+}
+
+.box6 {
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 4;
+}
+
+.box7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    text-align: center;
+}
+
+.box8 {
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 5;
+}
+
+.box9 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    text-align: center;
+}
+
+.box10 {
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 6;
+}
+
+.box11 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    text-align: center;
+}
+
+.tech1 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    text-align: center;
+}
+.tech2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    text-align: center;
+}
+.tech3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    text-align: center;
+}
+.tech4 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    text-align: center;
+}
+.tech5 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    text-align: center;
+}
+
 
 #boxes h1 {
     margin-bottom: 25px;
 }
 
-img {
-
-   border: 1px white solid;
-}
-
 footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: #fff;
+    padding: 1%;
+    color: goldenrod;
     background-color: #616668;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     border-top: #3EC9A7 3px solid;
+}
+
+.social {
+    padding: .25%;
+    color: #3EC9A7;
+    display: inline;
 }
