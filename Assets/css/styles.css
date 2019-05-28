@@ -75,6 +75,11 @@ header nav {
     margin-top: 10px;
 }
 
+.social {
+    float: right;
+    margin-right: 11%;
+}
+
 header .highlight, header .current a {
     color: #3EC9A7;
     font-weight: bold;
