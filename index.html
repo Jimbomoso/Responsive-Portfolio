@@ -21,16 +21,16 @@
         var formdata = new FormData();
         formdata.append("n", _("n").value);
         formdata.append("e", _("e").value);
-        formadata.append("m", _("m").value );
+        formadata.append("m", _("m").value);
         var ajax = new XMLHttpRequest();
         ajax.open("POST", "parser.php");
         ajax.onreadystatechange = function() {
             if(ajax.readyState == 4 && ajax == 200) {
                 if(ajax.responseText == "success") {
-                _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                    _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
             }   else {
-                _("status").innerHTML = ajax.responseText;
-                _("mybtn").disabled = false;
+                    _("status").innerHTML = ajax.responseText;
+                    _("mybtn").disabled = false;
             }
         }
     }
@@ -187,12 +187,14 @@
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
             <p> Phone: 603-892-7690 </p>
             <p> Email: Jimbomoso@gmail.com </p>
-            <form id="myform" onsubmit="submitForm(); return false;">
+            
+            <form id="my_form" onsubmit="submitForm(); return false;">
                 <p><input id="n" placeholder="Enter name" required> </p>
                 <p><input id="e" placeholder="Enter email" required> </p>
                 <p><input id="m" placeholder="Enter message"> </p>
                 <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
             </form>
+
         </div>
     </section>
 
