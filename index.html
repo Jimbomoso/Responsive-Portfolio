@@ -12,25 +12,6 @@
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
-    <script>
-        $(document).ready(function () {
-            $("#htmlform").submit(function (e) {
-                var url = "contact.php"; // the script where you handle the form input.
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(), // serializes the form's elements.
-                    success: function (data) {
-                        alert(data); // show response from the php script.
-                    }
-                });
-                e.preventDefault(); // avoid to execute the actual submit of the form
-            });
-        });
-    </script>
-
 </head>
 
 <body>
@@ -177,7 +158,7 @@
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
             <p> Phone: 603-892-7690 </p>
             <p> Email: Jimbomoso@gmail.com </p>
-            <form name="htmlform" id="htmlform" action="contact.php" method="post">
+            <form name="htmlform" id="htmlform">
                 <input type="Name" name="name" placeholder="Enter name"> <br> <br>
                 <input type="Email" name="email" placeholder="Enter email"> <br> <br>
                 <input type="Phone #" name="phone" placeholder="Enter phone"> <br> <br>
