@@ -11,6 +11,26 @@
     <link href="https://fonts.googleapis.com/css?family=Donegal+One" rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $("#htmlform").submit(function (e) {
+                var url = "contact.php"; // the script where you handle the form input.
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: $(this).serialize(), // serializes the form's elements.
+                    success: function (data) {
+                        alert(data); // show response from the php script.
+                    }
+                });
+                e.preventDefault(); // avoid to execute the actual submit of the form
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -52,103 +72,103 @@
 
     <div class="boxes">
 
-            <div class="box1">
-                <h1 id="portfolio"> Portfolio </h1>
-            </div>
+        <div class="box1">
+            <h1 id="portfolio"> Portfolio </h1>
+        </div>
 
-            <div class="box2">
-                <a href="https://amandanewton.github.io/ProjectOne/"><img src="Assets/Images/gal7.jpg" alt="pic1"></a>
-            </div>   
+        <div class="box2">
+            <a href="https://amandanewton.github.io/ProjectOne/"><img src="Assets/Images/gal7.jpg" alt="pic1"></a>
+        </div>
 
-            <div class="box3">
-                <h1> Date Night </h1>
-                <p> An app designed to make date night decisions drama free</p>
-                <p> <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a></p>
-            </div>
+        <div class="box3">
+            <h1> Date Night </h1>
+            <p> An app designed to make date night decisions drama free</p>
+            <p> <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a></p>
+        </div>
 
-            <div class="tech1"> 
-                <h1> Tech:</h1>
-                <p> HTML</p>
-                <p> CSS </p>
-                <p> Bootstrap</p>
-                <p> Javascript </p>
-                <p> Firebase</p>
-                <p> APIs </p>
+        <div class="tech1">
+            <h1> Tech:</h1>
+            <p> HTML</p>
+            <p> CSS </p>
+            <p> Bootstrap</p>
+            <p> Javascript </p>
+            <p> Firebase</p>
+            <p> APIs </p>
 
-            </div>
+        </div>
 
-            <div class="box4">
-                <a href="https://jimbomoso.github.io/TriviaGame/"> <img src="Assets/Images/gal8.jpg" alt="pic2"></a>
-            </div>
-            <div class="box5">
-                <h1> Trivia </h1>
-                <p> A Game of Thrones themed trivia game </p>
-                <p> <a href="https://github.com/Jimbomoso/TriviaGame">Github repo</a></p>
-            </div>
+        <div class="box4">
+            <a href="https://jimbomoso.github.io/TriviaGame/"> <img src="Assets/Images/gal8.jpg" alt="pic2"></a>
+        </div>
+        <div class="box5">
+            <h1> Trivia </h1>
+            <p> A Game of Thrones themed trivia game </p>
+            <p> <a href="https://github.com/Jimbomoso/TriviaGame">Github repo</a></p>
+        </div>
 
-            <div class="tech2"> 
-                    <h1> Tech:</h1>
-                    <p> HTML</p>
-                    <p> CSS </p>
-                    <p> Javascript</p>
-            </div>
-            
-            <div class="box6">
-                <a href="https://jimbomoso.github.io/Word-Guess-Game/"> <img src="Assets/Images/gal9.jpg" alt="pic3"></a>
-            </div>  
+        <div class="tech2">
+            <h1> Tech:</h1>
+            <p> HTML</p>
+            <p> CSS </p>
+            <p> Javascript</p>
+        </div>
 
-            <div class="box7">
-                <h1> Word Guessing Game </h1>
-                <p> A dog breed word guessing game </p> 
-                <p> <a href="https://github.com/Jimbomoso/Word-Guess-Game">Github repo</a></p>
-            </div>
+        <div class="box6">
+            <a href="https://jimbomoso.github.io/Word-Guess-Game/"> <img src="Assets/Images/gal9.jpg" alt="pic3"></a>
+        </div>
 
-            <div class="tech3"> 
-                    <h1> Tech:</h1>
-                    <p> HTML</p>
-                    <p> CSS </p>
-                    <p> Javascript</p>
-            </div>
-            
-            <div class="box8">
-                <a href="https://jimbomoso.github.io/unit-4-game/"> <img src="Assets/Images/gal10.jpg" alt="pic4"></a>
-            </div>  
+        <div class="box7">
+            <h1> Word Guessing Game </h1>
+            <p> A dog breed word guessing game </p>
+            <p> <a href="https://github.com/Jimbomoso/Word-Guess-Game">Github repo</a></p>
+        </div>
 
-            <div class="box9">
-                <h1>Crystal Collector Game </h1> 
-                <p> An Easter themed crystal (egg) collector game </p>
-                <p> <a href="https://github.com/Jimbomoso/unit-4-game">Github repo</a></p>
-            </div>
+        <div class="tech3">
+            <h1> Tech:</h1>
+            <p> HTML</p>
+            <p> CSS </p>
+            <p> Javascript</p>
+        </div>
 
-            <div class="tech4"> 
-                    <h1> Tech:</h1>
-                    <p> HTML</p>
-                    <p> CSS </p>
-                    <p> Javascript</p>
-            </div>
+        <div class="box8">
+            <a href="https://jimbomoso.github.io/unit-4-game/"> <img src="Assets/Images/gal10.jpg" alt="pic4"></a>
+        </div>
 
-            <div class="box10">
-                <a href="https://jimbomoso.github.io/TrainGame/"> <img src="Assets/Images/gal11.jpg" alt="pic5"></a>
-            </div>
-            
-            <div class="box11">
-                <h1> Train Scheduler </h1>
-                <p> A train scheduler app </p> 
-                <p> <a href="https://github.com/Jimbomoso/TrainGame">Github repo</a></p>
-            </div>
+        <div class="box9">
+            <h1>Crystal Collector Game </h1>
+            <p> An Easter themed crystal (egg) collector game </p>
+            <p> <a href="https://github.com/Jimbomoso/unit-4-game">Github repo</a></p>
+        </div>
 
-            <div class="tech5"> 
-                    <h1> Tech:</h1>
-                    <p> HTML</p>
-                    <p> CSS </p>
-                    <p> Bootstrap</p>
-                    <p> Javascript </p>
-                    <p> Firebase</p>
-            </div>
-            <!-- <div class="box">
+        <div class="tech4">
+            <h1> Tech:</h1>
+            <p> HTML</p>
+            <p> CSS </p>
+            <p> Javascript</p>
+        </div>
+
+        <div class="box10">
+            <a href="https://jimbomoso.github.io/TrainGame/"> <img src="Assets/Images/gal11.jpg" alt="pic5"></a>
+        </div>
+
+        <div class="box11">
+            <h1> Train Scheduler </h1>
+            <p> A train scheduler app </p>
+            <p> <a href="https://github.com/Jimbomoso/TrainGame">Github repo</a></p>
+        </div>
+
+        <div class="tech5">
+            <h1> Tech:</h1>
+            <p> HTML</p>
+            <p> CSS </p>
+            <p> Bootstrap</p>
+            <p> Javascript </p>
+            <p> Firebase</p>
+        </div>
+        <!-- <div class="box">
                 <img src="Assets/Images/gal6.jpg" alt="pic6">
             </div> -->
-        </div>
+    </div>
     </section>
 
     <section class="contactForm" id="contact">
@@ -157,11 +177,11 @@
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
             <p> Phone: 603-892-7690 </p>
             <p> Email: Jimbomoso@gmail.com </p>
-            <form>
-                <input type="Name" placeholder="Enter name"> <br> <br>
-                <input type="Email" placeholder="Enter email"> <br> <br>
-                <input type="Phone #" placeholder="Enter phone"> <br> <br>
-                <button type="submit" class="button_1">Submit</button>
+            <form name="htmlform" id="htmlform" action="contact.php" method="post">
+                <input type="Name" name="name" placeholder="Enter name"> <br> <br>
+                <input type="Email" name="email" placeholder="Enter email"> <br> <br>
+                <input type="Phone #" name="phone" placeholder="Enter phone"> <br> <br>
+                <button type="submit" value="Submit" class="button_1">Submit</button>
             </form>
         </div>
     </section>
