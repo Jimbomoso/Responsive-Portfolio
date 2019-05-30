@@ -12,6 +12,33 @@
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script> 
+
+    function _(id) { return document.getElementById(id); }
+    function submitForm() {
+        _("mybtn").disabled = true;
+        _("status").innerHTML = "please wait ...";
+        var formdata = new FormData();
+        formdata.append("n", _("n").value);
+        formdata.append("e", _("e").value);
+        formadata.append("m", _("m").value );
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "parser.php");
+        ajax.onreadystatechange = function() {
+            if(ajax.readyState == 4 && ajax == 200) {
+                if(ajax.responseText == "success") {
+                _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+            }   else {
+                _("status").innerHTML = ajax.responseText;
+                _("mybtn").disabled = false;
+            }
+        }
+    }
+    ajax.send(formdata);
+}
+</script>
+
+
 </head>
 
 <body>
@@ -158,11 +185,11 @@
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
             <p> Phone: 603-892-7690 </p>
             <p> Email: Jimbomoso@gmail.com </p>
-            <form name="htmlform" id="htmlform">
-                <input type="Name" name="name" placeholder="Enter name"> <br> <br>
-                <input type="Email" name="email" placeholder="Enter email"> <br> <br>
-                <input type="Phone #" name="phone" placeholder="Enter phone"> <br> <br>
-                <button type="submit" value="Submit" class="button_1">Submit</button>
+            <form id="myform" onsubmit="submitForm(); return false;">
+                <p><input id="n" placeholder="Enter name" required> </p>
+                <p><input id="e" placeholder="Enter email" required> </p>
+                <p><input id="m" placeholder="Enter message" rows="10"></p>
+                <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
             </form>
         </div>
     </section>
