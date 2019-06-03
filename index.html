@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141284240-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141284240-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> James Morrison Portfolio | Welcome</title>
@@ -12,31 +23,31 @@
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script> 
+    <script>
 
-    function _(id) { return document.getElementById(id); }
-    function submitForm() {
-        _("mybtn").disabled = true;
-        _("status").innerHTML = "please wait ...";
-        var formdata = new FormData();
-        formdata.append("n", _("n").value);
-        formdata.append("e", _("e").value);
-        formadata.append("m", _("m").value);
-        var ajax = new XMLHttpRequest();
-        ajax.open("POST", "parser.php");
-        ajax.onreadystatechange = function() {
-            if(ajax.readyState == 4 && ajax == 200) {
-                if(ajax.responseText == "success") {
-                    _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-            }   else {
-                    _("status").innerHTML = ajax.responseText;
-                    _("mybtn").disabled = false;
+        function _(id) { return document.getElementById(id); }
+        function submitForm() {
+            _("mybtn").disabled = true;
+            _("status").innerHTML = "please wait ...";
+            var formdata = new FormData();
+            formdata.append("n", _("n").value);
+            formdata.append("e", _("e").value);
+            formadata.append("m", _("m").value);
+            var ajax = new XMLHttpRequest();
+            ajax.open("POST", "parser.php");
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4 && ajax == 200) {
+                    if (ajax.responseText == "success") {
+                        _("my_form").innerHTML = '<h2>Thanks ' + _("n").value + ', your message has been sent.</h2>';
+                    } else {
+                        _("status").innerHTML = ajax.responseText;
+                        _("mybtn").disabled = false;
+                    }
+                }
             }
+            ajax.send(formdata);
         }
-    }
-    ajax.send(formdata);
-}
-</script>
+    </script>
 
 
 </head>
@@ -55,7 +66,7 @@
                     <li><a href="#contact"> Contact </a> </li>
                 </ul>
             </nav>
-        
+
         </div>
 
     </header>
@@ -187,7 +198,7 @@
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
             <p> Phone: 603-892-7690 </p>
             <p> Email: Jimbomoso@gmail.com </p>
-            
+
             <form id="my_form" onsubmit="submitForm(); return false;">
                 <p><input id="n" placeholder="Enter name" required> </p>
                 <p><input id="e" placeholder="Enter email" required> </p>
