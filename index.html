@@ -5,11 +5,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141284240-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-141284240-1');
+    
     </script>
 
     <meta charset="utf-8">
@@ -22,33 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Donegal+One" rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script>
-
-        function _(id) { return document.getElementById(id); }
-        function submitForm() {
-            _("mybtn").disabled = true;
-            _("status").innerHTML = "please wait ...";
-            var formdata = new FormData();
-            formdata.append("n", _("n").value);
-            formdata.append("e", _("e").value);
-            formadata.append("m", _("m").value);
-            var ajax = new XMLHttpRequest();
-            ajax.open("POST", "parser.php");
-            ajax.onreadystatechange = function () {
-                if (ajax.readyState == 4 && ajax == 200) {
-                    if (ajax.responseText == "success") {
-                        _("my_form").innerHTML = '<h2>Thanks ' + _("n").value + ', your message has been sent.</h2>';
-                    } else {
-                        _("status").innerHTML = ajax.responseText;
-                        _("mybtn").disabled = false;
-                    }
-                }
-            }
-            ajax.send(formdata);
-        }
-    </script>
-
 
 </head>
 
