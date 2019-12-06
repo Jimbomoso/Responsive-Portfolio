@@ -167,15 +167,15 @@
             <h1> Contact me</h1>
             <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
 
-            <form name="contact" method="POST" content-type="application/x-www-form-urlencoded" netlify id="my_form">
+            <form name="contact" method="POST" data-netlify="true">
                 <p> 
-                    <label>Your Name: </p> <p> <input type="text" name="name" required / > </label>
+                    <label>Your Name: <input type="text" name="name" required / > </label>
                 </p> <br>
                 <p>
-                    <label>Your Email: </p> <p> <input type="email" name="email" required /> </label>
+                    <label>Your Email: <input type="email" name="email" required /> </label>
                 </p> <br>
                 <p>
-                    <label>Comments: </p> <p> <input type="text" name="comments" required /> </label> 
+                    <label>Comments: <input type="text" name="comments" required /> </label> 
                 </p>\
                 <p><button type="submit" value="Submit">Submit</button></p>
             </form>
