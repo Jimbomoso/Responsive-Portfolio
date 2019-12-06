@@ -18,12 +18,12 @@ ul {
     padding: 0;
 }
 
-#mybtn {
-    height: 40px;
-    background: #3EC9A7;
-    color: red;
-    font-size: 1.5em;
-    border: 5px solid white;
+button {
+    color: white;
+    background: green;
+    font-size: 24px;
+    border: 3px solid red;
+    margin-top: 1vw;
     margin-bottom: 100px;
 }
 
@@ -127,8 +127,8 @@ header nav {
 .contactForm {
     text-align: center;
     background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg");
-    min-height: 820px;
-    margin-bottom: 50px;
+    /* min-height: 820px; */
+    margin-bottom: 1vw;
 }
 
 .contactForm input {
