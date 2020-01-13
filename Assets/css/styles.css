@@ -69,7 +69,7 @@ menu li {
 
 .bio p {
     color: white;
-    width: 60%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
@@ -78,7 +78,7 @@ menu li {
 
 #title {
     box-shadow: 5px 5px 25px black;
-    width: 60%;
+    width: 40%;
     padding: 1%;
     
 }
@@ -91,7 +91,7 @@ menu li {
     text-align: center;
     color: #2B879E;
     box-shadow: 5px 5px 25px black;
-    width: 60%;
+    width: 40%;
 }
 
 .boxes {
