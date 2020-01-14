@@ -66,7 +66,7 @@ menu li {
 .bio h1 {
     text-align: center;
     color: #2B879E;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .bio p {
@@ -159,6 +159,7 @@ a {
     box-shadow: 5px 5px 25px black;  
     background-image: url("../Images/prism.png");
     background-attachment: fixed;
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 
 .social {
@@ -168,29 +169,30 @@ a {
 }
 
 label {
-    color: red;
+    color: #2B879E;
 }
 
 .contactForm input {
     margin-top: 10px;
-    color: red;
+    color: white;
     height: 25px;
     width: 80%;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid #3EC9A7;
     box-shadow: 5px 5px 25px black;
+    background:rgb(48, 46, 46);
 }
 
 .contactForm h2 {
-    padding: 1vw;
-    font-size: 50px;
-    color: red;
+    font-size: 45px;
+    color: #2B879E;
     margin-top: 3vw;
     background: rgb(48, 46, 46);
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 5px 25px black;
+    text-align: center;
 }
 
 .contactForm p {
@@ -201,8 +203,8 @@ label {
 
 .selfie {
     margin-top: 20px;
-    width: 100%;
-    border: 15px white solid;
+    border-top: 15px white solid;
+    border-bottom: 15px white solid;
     box-shadow: 5px 5px 25px black;
 }
 
@@ -221,8 +223,8 @@ footer {
 button {
     background: #3EC9A7;
     font-size: 24px;
-    border: 3px solid red;
-    margin-top: 1vw;
+    border: 3px solid #2B879E;
+    margin-top: 3vw;
     margin-bottom: 100px; 
     box-shadow: 5px 5px 25px black
 }
