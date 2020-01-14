@@ -1,5 +1,7 @@
 body {
     background-image: url("../Images/prism.png");
+    background-size: cover;
+    background-image: url("../Images/prism.png");
 }
 
 .brand {
@@ -11,7 +13,7 @@ body {
 
 menu {
     margin-top: 0;
-    background: #2B879E;
+    background-image: url("../Images/prism.png");
     position: fixed;
     top: 0;
     width: 100%;
@@ -45,19 +47,19 @@ menu li {
 
 .bioContainer {
     background: url("../Images/ireboat.jpeg");
+    background-attachment: fixed;
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 700px;
     border-bottom: 3px solid #3EC9A7;
 }
 
 .bio {  
-    margin-top: 3vw;
-    line-height: 1.5;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Love Ya Like A Sister', cursive;
-    color: white;
     width: 100%;
 }
 
@@ -68,26 +70,29 @@ menu li {
 }
 
 .bio p {
-    color: white;
-    width: 40%;
+    color: gray;
+    width: 80%;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    padding: 1%;
 }
 
 #title {
+    background-image: url("../Images/prism.png");
     box-shadow: 5px 5px 25px black;
-    width: 40%;
-    padding: 1%;
-    
+    width: 40%;    
 }
 
 #portfolio {
+    background-image: url("../Images/prism.png");
+    background-attachment: fixed;
     padding: 1%;
     font-size: 45px;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3vw;
     text-align: center;
     color: #2B879E;
     box-shadow: 5px 5px 25px black;
@@ -95,6 +100,8 @@ menu li {
 }
 
 .boxes {
+    background-image: url("../Images/prism.png");
+    background: rgb(48, 46, 46);
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
@@ -104,6 +111,7 @@ menu li {
     line-height: 1.5;
     font-family: 'Love Ya Like A Sister', cursive;
     padding: 3%;
+    box-shadow: 5px 5px 25px black;
 }
 
 .boxes h3 {
@@ -117,7 +125,7 @@ menu li {
 }
 
 .boxes p { 
-    color: white;
+    color: gray;
 }
 
 .boxes a {
@@ -128,10 +136,9 @@ menu li {
     padding: 3%;
     border: 1px solid black;
     box-shadow: 5px 5px 10px black;
-}
-
-.work {
-    box-shadow:5px 5px 5px;
+    background-image: url("../Images/prism.png");
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 img {
@@ -144,10 +151,14 @@ a {
 
 .contactForm {
     text-align: center;
-    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg");
-    /* min-height: 820px; */
+    margin-top: 3vw;
     margin-bottom: 10vw;
-    box-shadow: 5px 5px 10px black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;  
+    box-shadow: 5px 5px 25px black;  
+    background-image: url("../Images/prism.png");
+    background-attachment: fixed;
 }
 
 .social {
@@ -163,18 +174,23 @@ label {
 .contactForm input {
     margin-top: 10px;
     color: red;
-    padding: 4px;
     height: 25px;
-    width: 350px;
+    width: 80%;
     text-align: center;
     border: 1px solid red;
+    box-shadow: 5px 5px 25px black;
 }
 
 .contactForm h2 {
     padding: 1vw;
     font-size: 50px;
     color: red;
-    margin-top: 10px;
+    margin-top: 3vw;
+    background: rgb(48, 46, 46);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 25px black;
 }
 
 .contactForm p {
@@ -185,14 +201,16 @@ label {
 
 .selfie {
     margin-top: 20px;
-    width: 300px;
+    width: 100%;
     border: 15px white solid;
+    box-shadow: 5px 5px 25px black;
 }
 
 footer {
     padding: 1%;
-    color: goldenrod;
-    background-color: #616668;
+    color: #3EC9A7;
+    background-image: url("../Images/prism.png");
+    background-size: cover;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -201,9 +219,10 @@ footer {
 }
 
 button {
-    background: green;
+    background: #3EC9A7;
     font-size: 24px;
     border: 3px solid red;
     margin-top: 1vw;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
+    box-shadow: 5px 5px 25px black
 }
