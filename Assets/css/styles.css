@@ -71,6 +71,7 @@ menu li {
     font-size: 45px;
     color: white;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .portfolio {
@@ -83,7 +84,6 @@ menu li {
 .bioText {
     box-shadow: 5px 5px 10px black;
     background-image: url("../Images/prism.png");
-    margin-top: .5em;
     padding: 1em;
 }
 
@@ -172,7 +172,6 @@ label {
     padding-top: 3em;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 3em;
     box-shadow: 5px 5px 10px black;
     background-image: url("../Images/prism.png");
     background-size: contain;
@@ -215,7 +214,7 @@ label {
     border-top: 10px white solid;
     border-bottom: 30px white solid;
     box-shadow: 5px 5px 25px black;
-    border-radius: 4px;
+    border-radius: 2px;
     max-height: 300px;
     margin-right: auto;
     margin-left: auto;
