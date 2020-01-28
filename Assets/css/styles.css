@@ -115,7 +115,7 @@ menu li {
 .boxes h4 {
     font-size: 25px;
     color: #2B879E;
-    padding: 1em;
+    padding-top: .5em;
 }
 
 .boxes p { 
@@ -138,6 +138,8 @@ menu li {
 
 .box img {
     max-width: 350px;
+    border: solid white 3px;
+    box-shadow: 5px 5px 10px black;
 }
 
 a {
