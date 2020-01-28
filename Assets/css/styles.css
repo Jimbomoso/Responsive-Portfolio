@@ -165,7 +165,6 @@ label {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 2em; */
 }
 
 .contactFormContainer {
@@ -180,11 +179,17 @@ label {
     background-attachment: fixed;
 }
 
-.contactForm {
+.contactFormSection {
     display: grid;
     grid-gap: .1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contactForm {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }
 
 .contactForm input {
@@ -212,6 +217,8 @@ label {
     box-shadow: 5px 5px 25px black;
     border-radius: 4px;
     max-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 footer {
@@ -231,7 +238,7 @@ button {
     background: #3EC9A7;
     font-size: 24px;
     border: 3px solid #2B879E;
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-bottom: 100px; 
     box-shadow: 5px 5px 25px black
 }
