@@ -64,66 +64,67 @@ menu li {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 80%;
 }
 
-.bio h1 {
-    text-align: center;
-    color: #2B879E;
+.sectionHeader {
     font-size: 45px;
+    color: white;
+    padding-top: 1em;
+}
+
+.portfolio {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.bioText {
+    box-shadow: 5px 5px 10px black;
+    background-image: url("../Images/prism.png");
+    margin-top: .5em;
+    padding: 1em;
 }
 
 .bio p {
     color: gray;
     width: 80%;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 1.5;
-    text-align: center;
-}
-
-#portfolio {
-    padding: 1em;
-    font-size: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #2B879E;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding-top: .5em;
+    padding-left: 1em;
 }
 
 .boxes {
     max-width: 80%;
-    background-image: url("../Images/prism.png");
-    background: rgb(48, 46, 46);
     margin: 0 auto;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    text-align: center;
+    text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 5px 5px 25px black;
 }
 
 .boxes h3 {
-    font-size: 30px;
+    font-size: 25px;
     color: #3EC9A7;
     padding-top: 1em;
-    padding-bottom: .3em;
+    padding-left: 1em;
 }
 
 .boxes h4 {
     font-size: 25px;
     color: #2B879E;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-left: 1em;
 }
 
 .boxes p { 
     color: gray;
     margin-bottom: .5em;
-    padding: .35em;
+    padding-left: 1.5em;
+    padding-top: .25em;
+    line-height: 1.5;
 }
 
 .boxes a {
@@ -143,26 +144,11 @@ menu li {
     max-width: 350px;
     border: solid white 3px;
     box-shadow: 5px 5px 10px black;
+    margin-left: 1.5em;
 }
 
 a {
     text-decoration: none;
-}
-
-.contactForm {
-    width: 80%;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    text-align: center;
-    margin-top: 3vw;
-    margin-bottom: 10vw;
-    margin-left: auto;
-    margin-right: auto;  
-    box-shadow: 5px 5px 25px black;  
-    background-image: url("../Images/prism.png");
-    background-attachment: fixed;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .social {
@@ -173,6 +159,32 @@ a {
 
 label {
     color: #2B879E;
+}
+
+.contactHeader {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 2em; */
+}
+
+.contactFormContainer {
+    width: 80%;
+    padding-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3em;
+    box-shadow: 5px 5px 10px black;
+    background-image: url("../Images/prism.png");
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.contactForm {
+    display: grid;
+    grid-gap: .1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .contactForm input {
@@ -187,16 +199,6 @@ label {
     background:rgb(48, 46, 46);
 }
 
-.contactForm h2 {
-    font-size: 45px;
-    color: #2B879E;
-    background: rgb(48, 46, 46);
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 25px black;
-    text-align: center;
-}
-
 .contactForm p {
     color: white;
     line-height: 1.5;
@@ -206,13 +208,11 @@ label {
 .selfie {
     margin-top: 20px;
     border-top: 10px white solid;
-    border-bottom: 10px white solid;
+    border-bottom: 30px white solid;
     box-shadow: 5px 5px 25px black;
     border-radius: 4px;
     max-height: 300px;
 }
-
-
 
 footer {
     padding: 1%;
