@@ -41,6 +41,10 @@ menu a:hover {
     font-weight: bold;
 }
 
+menu a:focus {
+    outline: 2px dotted orange;
+}
+
 menu li {
     display: inline;
     padding: 1%;
@@ -137,8 +141,15 @@ menu li {
     background-attachment: fixed;
 }
 
+.box a {
+    display: block;
+    text-align: center;
+    padding-top: .5em;
+}
+
 .box img {
-    max-width: 350px;
+    width: 300px;
+    height: 250px;
     border: solid white 3px;
     box-shadow: 5px 5px 10px black;
     margin-left: 1.5em;
