@@ -118,6 +118,7 @@ menu li {
     font-size: 25px;
     color: #2B879E;
     padding-left: 1em;
+    padding-top: .25em;
 }
 
 .boxes p { 
@@ -132,6 +133,10 @@ menu li {
     color: orange;
 }
 
+.boxes a:hover {
+    color: red;
+}
+
 .box {
     width: 100%;
     border: 1px solid black;
@@ -142,9 +147,7 @@ menu li {
 }
 
 .box a {
-    display: block;
-    text-align: center;
-    padding-top: .5em;
+    padding-left: 1.5em;
 }
 
 .box img {
@@ -153,6 +156,12 @@ menu li {
     border: solid white 3px;
     box-shadow: 5px 5px 10px black;
     margin-left: 1.5em;
+    display: block;
+    margin-bottom: .5em;
+}
+
+.box img:hover {
+    opacity: .5;
 }
 
 a {
