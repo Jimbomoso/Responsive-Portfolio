@@ -50,6 +50,7 @@ menu li {
     padding: 1%;
 }
 
+
 .hero {
     background-image: url("../Images/ireboat.jpeg");
     height: 450px;
@@ -58,47 +59,45 @@ menu li {
     border-bottom: #3EC9A7 3px solid;
 }
 
-.bio {  
-    background-image: url("../Images/prism.png");
-    background-attachment: fixed;
-    padding: 1em;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
 .sectionHeader {
+    margin: 0;
+    padding: 0;
     font-size: 45px;
     color: white;
+    padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.portfolio {
+.sectionHeader h1 {
+    margin-top: 2em;
+}
+
+.bio {  
+    background-image: url("../Images/prism.png");
+    background-attachment: fixed;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
 }
 
-.bioText {
+.bioTextContainer {
+    width: 100%;
     box-shadow: 5px 5px 10px black;
     background-image: url("../Images/prism.png");
-    padding: 1em;
+    /* padding: 1em; */
 }
 
-.bio p {
+.bioTextContainer p {
     color: gray;
-    width: 80%;
     line-height: 1.5;
     text-align: left;
-    padding-top: .5em;
-    padding-left: 1em;
+    padding: 1em;
+    margin: 1em;
 }
 
 .boxes {
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-gap: 2rem;
@@ -155,8 +154,9 @@ menu li {
     height: 250px;
     border: solid white 3px;
     box-shadow: 5px 5px 10px black;
-    margin-left: 1.5em;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: .5em;
 }
 
@@ -198,37 +198,39 @@ label {
 .contactFormSection {
     display: grid;
     grid-gap: .1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10em;
 }
 
 .contactForm {
+    margin-top: 2.3em;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .contactForm input {
     padding: 1em;
     margin-top: 10px;
-    color: white;
-    height: 35px;
-    min-width: 300px;
-    text-align: center;
-    border: 1px solid #3EC9A7;
-    box-shadow: 5px 5px 25px black;
-    background:rgb(48, 46, 46);
+    color: black;
+    height: 45px;
+    width: 300px;
 }
 
+.contactForm input#comments {
+    height: 300px;
+    
+}
 .contactForm p {
     color: white;
-    line-height: 1.5;
+    padding-bottom: 1em;
     font-size: 24px;
 }
 
 .selfie {
     margin-top: 20px;
-    border-top: 10px white solid;
+    border: 10px white solid;
     border-bottom: 30px white solid;
     box-shadow: 5px 5px 25px black;
     border-radius: 2px;
@@ -258,4 +260,56 @@ footer {
     width: 100%;
     border-top: #3EC9A7 3px solid;
 }
+
+@media (max-width: 500px) {
+    html {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;    
+    }
+    
+    .hero {
+        display: none;
+    }
+
+    menu {
+        margin: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .sectionHeader h1 {
+        margin-top: 2.5em;
+    }
+
+    .boxes {
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .box img {
+        padding: 0;
+    }
+    
+    .bio {
+        width: 90%;
+    }
+
+    .contactFormContainer {
+        width: 90%;
+    } 
+}
+
 

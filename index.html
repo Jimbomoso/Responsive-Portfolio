@@ -15,7 +15,7 @@
 
 <body>
     <menu>
-        <div class="container">
+        <div class="navContainer">
             <nav role="navigation">
                 <ul>
                     <li class="brand">
@@ -41,9 +41,11 @@
     <div class="hero">
     </div>
     <main role="main">
+        <div class="sectionHeader">
+            <h1> Bio </h1>
+        </div>
         <div class="bio">
-            <h1 class="sectionHeader"> Bio </h1>
-            <div class="bioText">
+            <div class="bioTextContainer">
                 <p> Full-Stack Developer with a passion for teamwork and problem
                     solving. A lifelong learner with a Bachelors Degree in Business
                     Administration, an Associates Degree in Automotive Technology, a certificate in Project Management
@@ -52,8 +54,8 @@
                 </p>
             </div>
         </div>
-        <div class="portfolio">
-            <h2 class="sectionHeader" id="portfolio"> Portfolio </h2>
+        <div class="sectionHeader">
+            <h2> Portfolio </h2>
         </div>
         <div class="boxes">
             <div class="box">
@@ -129,9 +131,9 @@
                             <input type="email" name="email" required />
                         </label>
                     </p>
-                    <p>
+                    <p id="comments">
                         <label>Comments: <br>
-                            <input type="text" name="comments" required />
+                            <input type="text" id="comments" name="comments" required />
                         </label>
                     </p>
                     <p>
