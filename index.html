@@ -1,150 +1,178 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang='EN'>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141284240-1"></script> -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> James Morrison | Full-Stack Developer</title>
+    <title> James Morrison | Full-Stack Developer </title>
     <meta name="James Morrison | Full-Stack Developer" content="James Morrison Full-Stack Developer Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Donegal+One" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/css/reset.css">
-    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link href="./Assets/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <menu>
-        <div class="navContainer">
-            <nav role="navigation">
-                <ul>
-                    <li class="brand">
-                        James Morrison
-                    </li>
-                </ul>
+    <nav>
+        <span><a href="#home">Home</a></span>
+        <span><a href="#portfolio">Portfolio</a></span>
+        <span><a href="#contact">Contact</a></span>
 
-                <ul>
-                    <li class="nav">
-                        <a href="index.html"> Home </a>
-                    </li>
-                    <li>
-                        <a href="#portfolio"> Portfolio </a>
-                    </li>
-                    <li>
-                        <a href="#contactForm"> Contact </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </menu>
-
-    <div class="hero">
-    </div>
-    <main role="main">
-        <div class="sectionHeader">
-            <h1> Bio </h1>
-        </div>
-        <div class="bio">
-            <img class="selfie" src="Assets/Images/straw.jpg" alt="biopic">
-            <div class="bioTextContainer">
-                <p> Full-Stack Developer with a passion for teamwork and problem
+    </nav>
+    <a id="home"></a>
+    <header>
+        <h1> jAMES mORRISON</h1>
+    </header>
+    <main>
+        <section class='bio'>
+            <figure>
+                <img class='selfie' src='Assets/Images/straw.jpg'>
+                <figcaption> My better half and me </figcaption>
+            </figure>
+            <article>
+                <p>
+                    Full-Stack Developer with a passion for teamwork and problem
                     solving. A lifelong learner with a Bachelors Degree in Business
                     Administration, an Associates Degree in Automotive Technology, a certificate in Project Management
                     and an M.B.A. degree and a Full-Stack Development certificate in progress from the University of New
                     Hampshire.
                 </p>
-            </div>
-        </div>
-        <div class="sectionHeader">
-            <h2> Portfolio </h2>
-        </div>
-        <div class="boxes">
-            <div class="box">
-                <h3> Date Night </h3>
-                <p> An app designed to make date night decisions drama free</p>
-                <a href="https://amandanewton.github.io/ProjectOne/">
-                    <img src="Assets/Images/gal7.jpg" alt="pic1">
-                </a>
-                <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a>
-                <h4> Tech:</h4>
-                <p> HTML, CSS, Bootsrap, Javascript, Firebase, APIs </p>
-            </div>
-
-            <div class="box">
-                <h3> Trivia </h3>
-                <p> A Game of Thrones themed trivia game </p>
-                <a href="https://jimbomoso.github.io/TriviaGame/">
-                    <img src="Assets/Images/gal8.jpg" alt="pic2">
-                </a>
-                <a href="https://github.com/Jimbomoso/TriviaGame">Github repo</a>
-                <h4> Tech:</h4>
-                <p> HTML, CSS, Javascript</p>
-            </div>
-
-            <div class="box">
-                <h3> Word Guessing Game </h3>
-                <p> A dog breed word guessing game </p>
-
-                <a href="https://jimbomoso.github.io/Word-Guess-Game/">
-                    <img src="Assets/Images/gal9.jpg" alt="pic3">
-                </a>
-                <a href="https://github.com/Jimbomoso/Word-Guess-Game">Github repo</a>
-                <h4> Tech:</h4>
-                <p> HTML, CSS, Javascript</p>
-            </div>
-
-            <div class="box">
-                <h3> Codex </h3>
-                <p> A coding flashcard app </p>
-                <a href="https://team-three-project-two.herokuapp.com/">
-                    <img src="Assets/Images/gal12.jpg" alt="pic5">
-                </a>
-                <a href="https://github.com/Jimbomoso/Project-2">Github repo</a>
-                <h4> Tech:</h4>
-                <p> HTML, CSS, Bootstrap, Javascript, Sequilize, MySQL, jQuery</p>
-            </div>
-
-            <div class="box">
-                <h3> switchBak </h3>
-                <p> An app designed to make travel planning easy and affordable</p>
-                <a href="http://switchbak.herokuapp.com/">
-                    <img src="Assets/Images/switchBak.png" alt="screenshot of app">
-                </a>
-                <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a>
-                <h4> Tech:</h4>
-                <p> HTML, CSS, Javascript, React, MongoDB </p>
-            </div>
-        </div>
-        <div class="sectionHeader">
-            <h2> Contact me </h2>
-        </div>
-        <div class="contactFormContainer">
-            <form class="contactForm" name="contact" method="POST">
-                <p>
-                    <label for="name">Name: <br>
-                        <input type="text" name="name" id="name" required />
-                    </label>
-                </p>
-                <p>
-                    <label for="email">Email: <br>
-                        <input type="email" name="email" id="email" required />
-                    </label>
-                </p>
-                <p id="comments">
-                    <label for="comments">Comments: <br>
-                        <input type="text" id="comments" name="comments" required />
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Submit</button>
-                </p>
-            </form>
-        </div>
+            </article>
+        </section>
+        <a id="portfolio"></a>
+        <section class='portfolio'>
+            <article>
+                <h2> Date Night </h2>
+                <figure>
+                    <div class='tech'>
+                        <a href="https://amandanewton.github.io/ProjectOne/">
+                            <img src="Assets/Images/gal7.jpg" alt="pic1">
+                            <figcaption> An app designed to make date night decisions drama free </figcaption>
+                        </a>
+                        <h3> Tech:</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                            <li>Firebase</li>
+                            <li>jQuery</li>
+                            <li>APIs</li>
+                        </ul>
+                        <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a>
+                    </div>
+                </figure>
+            </article>
+            <article>
+                <h2> Word Guessing Game </h3>
+                    <figure>
+                        <div class='tech'>
+                            <a href="https://jimbomoso.github.io/Word-Guess-Game/">
+                                <img src="Assets/Images/gal9.jpg" alt="pic3">
+                                <figcaption>A dog breed word guessing game</figcaption>
+                            </a>
+                            <h3> Tech:</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <a href="https://github.com/Jimbomoso/Word-Guess-Game">Github repo</a>
+                        </div>
+                    </figure>
+            </article>
+            <article>
+                <h2> Trivia </h2>
+                <figure>
+                    <div class='tech'>
+                        <a href="https://jimbomoso.github.io/TriviaGame/">
+                            <img src="Assets/Images/gal8.jpg" alt="pic2">
+                            <figcaption>A Game of Thrones themed trivia game</figcaption>
+                        </a>
+                        <h3> Tech:</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <a href="https://github.com/Jimbomoso/TriviaGame">Github repo</a>
+                    </div>
+                </figure>
+            </article>
+            <article>
+                <h2> Word Guessing Game </h2>
+                <figure>
+                    <div class='tech'>
+                    <a href="https://jimbomoso.github.io/Word-Guess-Game/">
+                        <img src="Assets/Images/gal9.jpg" alt="pic3">
+                        <figcaption> A dog breed word guessing game </figcaption>
+                    </a>
+                    <h3> Tech:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <a href="https://github.com/Jimbomoso/Word-Guess-Game">Github repo</a>
+                    </div>
+                </figure>
+            </article>
+            <article>
+                <h2> Codex </h2>
+                <figure>
+                    <div class='tech'>
+                        <a href="https://team-three-project-two.herokuapp.com/">
+                            <img src="Assets/Images/gal12.jpg" alt="pic5">
+                            <figcaption> A coding flashcard app </figcaption>
+                        </a>
+                        <h3> Tech:</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Sequilize</li>
+                            <li>mySQL</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="https://github.com/Jimbomoso/Project-2">Github repo</a>
+                    </div>
+                </figure>
+            </article>
+            <article>
+                <h2> switchBak </h2>
+                <figure>
+                    <div class='tech'>
+                    <a href="http://switchbak.herokuapp.com/">
+                        <img src="Assets/Images/switchBak.png" alt="screenshot of app">
+                        <figcaption> An app designed to make travel planning easy and affordable</figcaption>
+                    </a>
+                    <h3> Tech:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <a href="https://github.com/Jimbomoso/ProjectOne">Github repo</a>
+                    </div>
+                </figure>
+            </article>
+        </section>
+        <a id='contact'></a>
+        <section class='contact'>
+            <article>
+                <form class='contactForm' name='contact' method='POST'>
+                    <label for="name">Name:</label> <br>
+                    <input type="text" name="name" id="name" required> <br>
+                    <label for="email">Email: </label> <br>
+                    <input type="email" name="email" id="email" required> <br>
+                    <label for="comments">Comments: </label> <br>
+                    <textarea type="textarea" name="comments" rows="10" cols="40"> </textarea> <br>
+                    <button type='submit'>Submit</button>
+            </article>
+        </section>
     </main>
-    <footer role="contentinfo">
+    <footer>
         <p> &copy
-            <script type="text/JavaScript"> document.write(new Date().getFullYear()); </script> James Morrison, All
+            <script type='text/JavaScript'> document.write(new Date().getFullYear()); </script> James Morrison, All
             Rights Reserved
         </p>
     </footer>

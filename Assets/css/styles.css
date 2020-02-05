@@ -1,341 +1,173 @@
-/* main */
-
-/* @media only screen and (min-width: 451px) { */
-    body {
-        background-size: cover;
-        background-image: url("../Images/prism.png");
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .brand {
-        text-transform: uppercase;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: #3EC9A7;
-        font-size: 3.5rem;
-    }
-    menu {
-        margin-top: 0;
-        background-image: url("../Images/prism.png");
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        color: #fff;
-        min-height: 70px;
-        border-bottom: #3EC9A7 3px solid;
-        font-family: 'Donegal One', serif;
-    }
-    ul {
-        margin: 0;
-        text-align: center;
-        width: 100%;
-    }
-    menu a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    menu a:hover {
-        color: orange;
-        font-weight: bold;
-    }
-    menu a:focus {
-        outline: 2px dotted orange;
-    }
-    menu li {
-        display: inline;
-        padding: 1em;
-    }
-    .sectionHeader {
-        margin: 0;
-        padding: 0;
-        font-size: 45px;
-        color: white;
-        padding-left: 1em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    .sectionHeader h1 {
-        margin-top: 2em;
-    }
-    .bio {
-        background-image: url("../Images/prism.png");
-        background-attachment: fixed;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-gap: .1rem;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    .bioTextContainer {
-        box-shadow: 5px 5px 10px black;
-        background-image: url("../Images/prism.png");
-        padding: 2.5em;
-        margin: 2.5em;
-    }
-    .bioTextContainer p {
-        color: gray;
-        line-height: 1.5;
-        text-align: center;
-        padding: 1em;
-        margin: 1em;
-    }
-    .boxes {
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        text-align: left;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .boxes h3 {
-        font-size: 25px;
-        color: #3EC9A7;
-        padding-top: 1em;
-        padding-left: 1em;
-    }
-    .boxes h4 {
-        font-size: 25px;
-        color: #2B879E;
-        padding-left: 1em;
-        padding-top: .25em;
-    }
-    .boxes p {
-        color: gray;
-        margin-bottom: .5em;
-        padding-left: 1.5em;
-        padding-top: .25em;
-        line-height: 1.5;
-    }
-    .boxes a {
-        color: orange;
-    }
-    .boxes a:hover {
-        color: red;
-    }
-    .box {
-        width: 100%;
-        border: 1px solid black;
-        box-shadow: 5px 5px 10px black;
-        background-image: url("../Images/prism.png");
-        background-size: contain;
-        background-attachment: fixed;
-    }
-    .box a {
-        padding-left: 1.5em;
-    }
-    .box img {
-        width: 300px;
-        height: 250px;
-        border: solid white 3px;
-        /* box-shadow: 5px 5px 10px black; */
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: .5em;
-    }
-    .box img:hover {
-        opacity: .5;
-    }
-    a {
-        text-decoration: none;
-    }
-    .social {
-        padding: .25%;
-        color: #3EC9A7;
-        display: inline;
-    }
-    label {
-        color: #2B879E;
-    }
-    .contactHeader {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .contactFormContainer {
-        padding-top: 3em;
-        margin-right: auto;
-        margin-left: auto;
-        box-shadow: 5px 5px 10px black;
-        background-image: url("../Images/prism.png");
-        background-size: contain;
-        background-attachment: fixed;
-        width: 50%;
-        text-align: center;
-        margin-bottom: 10em;
-    }
-    .contactForm {
-        margin-top: 2.3em;
-        margin-right: auto;
-        margin-left: auto;
-        width: 50%;
-    }
-    .contactForm input {
-        padding: 1em;
-        margin-top: 10px;
-        color: black;
-        height: 45px;
-        width: 300px;
-    }
-    .contactForm input#comments {
-        height: 300px;
-    }
-    .contactForm p {
-        color: white;
-        padding-bottom: 1em;
-        font-size: 24px;
-    }
-    .selfie {
-        margin-top: 20px;
-        border: 10px white solid;
-        border-bottom: 30px white solid;
-        box-shadow: 5px 5px 25px black;
-        border-radius: 2px;
-        max-height: 300px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    button {
-        background: #3EC9A7;
-        font-size: 24px;
-        border: 3px solid #2B879E;
-        margin-top: 1em;
-        margin-bottom: 100px;
-        box-shadow: 5px 5px 25px black;
-    }
-    footer {
-        padding: 1%;
-        color: #3EC9A7;
-        background-image: url("../Images/prism.png");
-        background-size: cover;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-top: #3EC9A7 3px solid;
-    }
-/* } */
-
-@media only screen and (max-width: 450px) {
-    html {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;   
-
-    }
-
-    menu {
-        margin: 0;
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .sectionHeader {
-        padding-left: 1em;
-    }
-    .sectionHeader h1 {
-        margin-top: 3.5em;
-    }
-
-    .boxes {
-        padding: 0;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-
-    .box img {
-        padding: 0;
-    }
-    
-    .bio {
-        width: 90%;
-    }
-
-    .bioTextContainer {
-        padding: 0;
-        margin: 0;
-        font-size: 18px;
-    }
-    .contactFormContainer {
-        width: 90%;
-    } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 350px) {
-    body {
-        display: flex;
-    }
-    menu {
-        font-size: 12px;
-    }
-    .sectionHeader {
-        width: 90%;
-        padding-left: .5em;
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
-    .selfie {
-        padding: 0;
-        margin: 0;
-    }
-    .sectionHeader h1{
-        margin-top: 2em;
-    }
-    .bio, .bioTextContainer, .bioTextContainer p {
-        padding: 0;
-        margin: 0;
-        width: 90%;
-        width: 320px;
-        font-size: 12px;
-    }
-    .bio p {
-        padding: 0;
-        margin: 0;
-    }
-    ul {
-        width: 100%;
-    }
-    .brand {
-        font-size: 24px;
-    }
-    .boxes {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    .boxes img {
-        width: 300px;
-    }
-    .contactFormContainer {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    .contactForm {
-        padding: 0;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .contactForm input {
-        width: 100%;
-    }
-    button {
-        margin-bottom: 20px;
-    }
-    
+body {
+    margin: 0 auto;
+    width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    min-width: 350px;
+    max-width: 740px;
+    overflow: scroll;
+    border-radius: 5px;
+}
+
+.selfie {
+    border: 30px inset #666;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 100px auto 50px auto;
+}
+
+p {
+    min-width: 350px;
+    max-width: 700px;
+    color: #333;
+    margin: 5px auto;
+    font-size: 34px;
+    line-height: 1.5;
+}
+
+nav {
+    text-align: center;
+    padding: 50px 0;
+    background: tomato;
+}
+
+nav span {
+    max-width: 100%;
+    display: inline-block;
+    font-size: 58px;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    margin: 0 50px;
+}
+
+nav span a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav span a:hover {
+    color: yellowgreen;
+}
+
+nav a:focus {
+    border: 3px solid tomato;
+}
+
+section, article {
+    margin: 2.5em auto;
+    min-width: 350px;
+    max-width: 750px;
+}
+
+.portfolio h2 {
+    background: teal;
+    color: white;
+    max-width: 270px;
+    padding: .5em;
+    margin-left: .25em;
+    border-radius:5px;
+}
+
+.portfolio h3 {
+    background: tomato;
+    color: white;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.tech {
+    /* border: 3px solid tomato; */
+    border-radius: 5px;
+    padding: .5em;
+    margin-top: .5em;
+    height: 750px;
+    overflow: scroll;
+}
+
+.tech p {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.tech ul {
+    padding: 2.5em;
+    margin: 1em;
+    line-height: 1.5;
+}
+
+.tech li {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.tech a {
+    margin-top: 100px;
+    color: tomato;
+}
+
+.portfolio img {
+    border: 30px outset #777;
+    padding: 50px;
+}
+
+.portfolio img:hover {
+    opacity: .5;
+}
+
+figcaption {
+    text-align: right;
+    color: #666;
+    font-size: 18px;
+    padding: .5em;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 100%;
+    border: 30px solid #666;
+    background: teal;
+}
+
+form { 
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px auto;
+    overflow: scroll;
+}
+
+button {
+    color: white;
+    background: blueviolet;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p { 
+    text-align: center;
+    margin: 50px auto;
+} 
