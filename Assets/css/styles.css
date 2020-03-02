@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Candal', sans-serif;
 }
 
 html {
@@ -20,6 +20,10 @@ div {
   margin-bottom: 1rem;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,9 +36,44 @@ img {
   display: block;
 }
 
-.selfie {
-  border: 2px solid white;
-  padding: 50px;
+.box {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  border: 1px white solid;
+}
+
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+  /* color: whitesmoke; */
+}
+
+.text {
+  font-size: 1.5rem;
+  left: 80;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-family: 'Candal', sans-serif;
+}
+
+.texta {
+  top: 5%;
+  left: 0;
+  right: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+.textb {
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  color: whitesmoke;
 }
 
 h1 {
@@ -56,20 +95,19 @@ nav {
   text-align: center;
   padding: 50px 0;
   background: tomato;
+  font-family: 'Candal', sans-serif;
 }
 
 nav span {
   max-width: 100%;
   display: inline-block;
   font-size: 2rem;
-  letter-spacing: 2px;
   padding: 20px 10px;
   margin: 0 50px;
 }
 
 nav span a {
   color: #fff;
-  text-transform: uppercase;
 }
 
 nav span a:hover {
@@ -198,6 +236,9 @@ p {
 
 #bio figcaption {
   color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 #dateNight {
   background-image: url("../Images/stockimage4.jpeg");
