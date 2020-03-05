@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Candal', sans-serif;
+  font-family: 'Trade Winds', cursive;
 }
 
 html {
@@ -40,7 +40,8 @@ img {
   position: relative;
   display: inline-block;
   width: 400px;
-  border: 1px white solid;
+  border: 10px white solid;
+  border-radius: 8px;
 }
 
 .box .text {
@@ -48,32 +49,50 @@ img {
   z-index: 999;
   margin: 0 auto;
   text-align: center;
-  width: 80%;
+  width: 100%;
   display: inline-block;
-  /* color: whitesmoke; */
+
 }
 
 .text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   left: 80;
   display: inline-block;
   position: absolute;
   right: 0;
-  font-family: 'Candal', sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  text-transform: uppercase;
+
+}
+
+.sticker {
+  background-color: tomato;
+  width: 100%;
+  color: white;
+  padding: 1%;
+  font-size: .75rem;
 }
 
 .texta {
-  top: 5%;
   left: 0;
   right: 0;
-  color: #333;
-  font-size: 1.25rem;
 }
 .textb {
-  bottom: 3%;
+  bottom: .1%;
   left: 0;
   right: 0;
-  color: whitesmoke;
+  height: 60px;
+  font-size: 1rem;
+}
+
+#name {
+  font-family: 'Rock Salt', cursive;
+  color: black;
+  font-size: 1.5rem;
+}
+
+#hello {
+  font-size: 2rem;
 }
 
 h1 {
@@ -93,17 +112,16 @@ p {
 
 nav {
   text-align: center;
-  padding: 50px 0;
+  padding: 15px 0;
   background: tomato;
-  font-family: 'Candal', sans-serif;
+  font-family: 'Abril Fatface', cursive;
 }
 
 nav span {
   max-width: 100%;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 20px 10px;
-  margin: 0 50px;
 }
 
 nav span a {
@@ -227,7 +245,8 @@ article {
 
 #bio h1,
 p {
-  color: #666;
+  color: tomato;
+  font-family: 'Trade Winds', cursive;
 }
 
 #bio h1 {
@@ -269,10 +288,17 @@ figcaption {
   background: teal;
 }
 
+.contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+}
+
 form {
   margin: 0 auto;
   display: block;
-  color: white;
+  color: tomato;
   text-align: center;
 }
 
@@ -296,4 +322,5 @@ button {
 footer p {
   text-align: center;
   margin: 50px auto;
+  color: #333;
 }

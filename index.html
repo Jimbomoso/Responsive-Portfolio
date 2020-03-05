@@ -6,6 +6,7 @@
     <meta name="James Morrison | Full-Stack Developer" content="James Morrison Full-Stack Developer Portfolio">
     <link rel="stylesheet" href="./Assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Candal|Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rock+Salt&family=Trade+Winds&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <link href="./Assets/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -26,11 +27,11 @@
                 <figure>
                     <div class='box'>
                       <div class='text texta'>
-                        Hello, my name is: <br> James Morrison
+                        <div class='sticker'> <span id='hello'> Hello,</span> <br> my name is: </div> <span id='name'>James Morrison</span>
                       </div>
                       <img src='Assets/Images/straw.jpg'>
-                      <div class='text textb'>
-                         and I am a web developer.
+                      <div class='text textb sticker'>
+                         <br> and I am a web developer.
                       </div>
                   </div>
                     <figcaption> My better half and me </figcaption>
@@ -196,6 +197,7 @@
         <a id='contact'></a>
         <section class='contact'>
             <article>
+                <h2>Contact me</h2> <br>
                 <form class='contactForm' name='contact' method='POST'>
                     <label for="name">Name:</label> <br>
                     <input type="text" name="name" id="name" required> <br>
